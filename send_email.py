@@ -42,4 +42,4 @@ def send_att(file_dir,start_time_point,end_time_point,total_time):
     s.sendmail(msg_from,to,msg.as_string())
     print("邮件发送成功")
 if __name__ == "__main__":
-    send_att('/exp/home/luxi.xiao/日志/MambaBCD_LEVIR-CD+.log')
+    send_att()
