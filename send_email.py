@@ -4,7 +4,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 def send_att(file_dir,start_time_point,end_time_point,total_time):
     msg_from = '' # 发送方邮箱
-    passwd = ''
+    passwd = '' #授权码
     
     to= [''] #接受方邮箱
     
