@@ -15,7 +15,7 @@ def main():
     status = monitor_pid.output_status(pid)
     if  status != 0:
         file_path = str(input("请输入要发送的文件路径(可以为空)："))
-        if file_path is  None:
+        if file_path == '':
             cmd = f"nohup python reminder.py --pid_to_process {pid} > email.log 2>&1 &"
         else:
             cmd = f"nohup python reminder.py --pid_to_process {pid} --logfile {file_path} > email.log 2>&1 &"
