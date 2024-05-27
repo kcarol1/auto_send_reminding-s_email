@@ -10,9 +10,4 @@
 python start.py
 ```
 
-# 运行2
-可以创建`/exp/home/user/.local/bin/reminder`并在其中编辑
-```
-/exp/home/user/miniconda3/bin/python /exp/home/user/Path/to/start.py
-```
-即可在命令行直接输入`reminder`运行
+
