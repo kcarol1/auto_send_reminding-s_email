@@ -11,7 +11,7 @@ def setting(option):
 def main():
     option = int(input("查看GPU进程（1）或一般进程（2）："))
     setting(option)
-    pid = int(input("不要输入类似“1、2、123、222”这种，因为这些都是系统进程"+"\n"+"请输入要监控的进程PID:"))
+    pid = int(input("不要输入类似“1、2、123、222”这种"+"\n"+"请输入要监控的进程PID:"))
     status = monitor_pid.output_status(pid)
     if  status != 0:
         file_path = str(input("请输入要发送的文件路径(可以为空)："))
