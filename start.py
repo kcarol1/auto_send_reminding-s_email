@@ -9,9 +9,9 @@ def setting(option):
     if option == 2:
         subprocess.run(['ps','-a'])
 def main():
-    option = int(input("查看GPU进程（1）或一般进程（2）："))
-    while True:
+     while True:
         try:
+            option = int(input("查看GPU进程（1）或一般进程（2）："))
             setting(option)
             pid = int(input("不要输入类似“1、2、123、222”这种"+"\n"+"请输入要监控的进程PID:"))
             status = monitor_pid.output_status(pid)
